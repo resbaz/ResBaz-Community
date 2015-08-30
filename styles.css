@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+html, body, .main {
+    width: 100%;
+    height: 100%;
+    /*font-family: 'Old Standard TT', serif;*/
+    /*font-family: 'Lato';*/ 
+    background-color: #EFEFEF;
+}
+
+.categories{
+	font-size: 2.5em;
+	padding-bottom: 1em;
+	color: #337ab7;
+
+}
+
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
+.banner{	
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.frontpage{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	font-size: 2em;	
+}
+
+
+.navbar-textsize{
+	font-size: 2.5em;
+}
+
+.profiles{
+	padding-top: 10em;
+	padding-left: 30em;
+	position: absolute;
+	width: 80%;
+}
+
+.profile{
+	margin-bottom: 3em;
+}
+
+.profilepic{
+	border-radius: 100px;
+	width: 200px;
+}
+
+.description{
+	font-size: 2em;
+	padding: 1em;
+	padding-left: 3em;
+	position: absolute;
+}
+
+.horizontalline {
+    border: 3px;
+}
+
+.hr {
+    border: 0;
+    height: 1px;
+    background: #009999;
+    background-image: linear-gradient(to right, #009999, #333, #009999);
+}
