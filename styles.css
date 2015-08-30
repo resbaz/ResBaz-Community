@@ -14,8 +14,8 @@ html, body, .main {
 }
 
 .categories{
-	font-size: 2.5em;
-	padding-bottom: 1em;
+	font-size: 2em;
+	padding-bottom: .5em;
 	color: #337ab7;
 
 }
@@ -36,29 +36,19 @@ html, body, .main {
 	right: 0;
 }
 
-.frontpage{
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	font-size: 2em;	
-}
-
-
 .navbar-textsize{
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 .profiles{
-	padding-top: 10em;
-	padding-left: 30em;
+	padding-top: 8em;
+	padding-left: 20em;
 	position: absolute;
 	width: 80%;
 }
 
 .profile{
-	margin-bottom: 3em;
+	margin-bottom: 1.5em;
 }
 
 .profilepic{
@@ -67,19 +57,9 @@ html, body, .main {
 }
 
 .description{
-	font-size: 2em;
-	padding: 1em;
-	padding-left: 3em;
+	font-size: 1.5em;
+	padding: .5em;
+	padding-left: 1.5em;
+	padding-top: 1.5em;
 	position: absolute;
-}
-
-.horizontalline {
-    border: 3px;
-}
-
-.hr {
-    border: 0;
-    height: 1px;
-    background: #009999;
-    background-image: linear-gradient(to right, #009999, #333, #009999);
 }
