@@ -63,3 +63,10 @@ html, body, .main {
 	padding-top: 1.5em;
 	position: absolute;
 }
+
+@media (max-width: 600px){
+.navbar-textsize{
+	font-size: 1.5em;
+}
+
+}
