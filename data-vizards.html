@@ -7,53 +7,63 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-	<nav class="navbar navbar-default navbar-fixed-top navbar-textsize">
-	<a href="index.html">
-		<img src="images/logo.png" 	style="height:1.5em;" class="banner">
-	</a>
-	  <div class="container" style="margin-top: 1.5em; ">
-	    <ul class="nav navbar-nav" >
-	        <li>
-	          <a href="data-wranglers.html">Data Wranglers</a>
-	        </li>
-	        <li>
-	          <a href="humanists.html">Humanists</a>
-	        </li>
-	        <li>
-	          <a href="data-vizards.html">Data Vizards</a>
-	        </li>
-	        <li>
-	          <a href="cadventurers.html">CADventurers</a>
-	        </li>
-	      </ul>
-	  </div>
-	</nav>
+	<ul class="navigation">
+	  <li><a href="index.html"><img src="images/logo.png" 	style="height:1.5em;"	></a></li>
+	  <li><a href="data-wranglers.html">Data Wranglers</a></li>
+	  <li><a href="humanists.html">Humanists</a></li>
+	  <li><a href="data-vizards.html">Data Vizards</a></li>
+	  <li> <a href="cadventurers.html">CADventurers</a></li>
+	</ul>
 
-		<div class="profiles">
+	<ul class="flex-container_column">
 
-		<div class="categories"> Trainers </div>
+		<ul class="flex-container_row">
+		<li class="flex-item-categorie"> Trainers </li>
+		</ul>
 
-		<div class="profile">
-			<img src="images/dataviz.png" alt="DataViz" class="profilepic">
-			<span class="description">
-				<div> <a href="https://twitter.com/Isa_Kiko"> DataViz angel </a> </div>
-				<div> Tools: HTML, JavaScript, D3 </div>
-				<div> Specialities: Making data look pretty </div>
-			</span>
-		</div>
+		<!-- TRAINERS BELOW -->
 
-		<div class="categories"> Helpers </div>
+		<ul class="flex-container_row">
+		  <li>
+		  	<img class="flex-item-image" src="images/platy.png" alt="Platy">
+		  </li>
+		  <li class="flex-item-description">
+		  	<a href="https://twitter.com/EngKerry"> Platypus </a> </br>
+			Tools: R, Python, MATLAB </br>
+			Specialties: Optimisation, image processing  </li>
+		</ul>
 
-		<div class="profile">
-			<img src="images/ele.png" alt="Ele" class="profilepic">
-			<span class="description">
-				<div> <a href="https://twitter.com/robrkerr"> Prof. Elephante </a> </div>
-				<div> Tools: D3, React </div>
-				<div> Specialities: Mapping </div>
-			</span>
-		</div>
+		<ul class="flex-container_row">
+		<li class="flex-item-categorie"> Helpers </li>
+		</ul>
 
-	</div>
+		<!-- HELPERS BELOW -->
+
+		<ul class="flex-container_row">
+		  <li>
+			<img class= "flex-item-image" src="images/kitty.png" alt="Kitty">	  
+		  </li>
+		  <li class="flex-item-description">
+		  	<a href="https://twitter.com/Isa_Kiko"> Kitty </a> </br>
+			Tools: R, Python, MATLAB </br>
+			Specialties: Optimisation, image processing  </li>
+		</ul>
+
+	</ul>
 
   </body>
 </html>
+
+
+<!-- TEMPLATE -->
+<!-- 
+		<ul class="flex-container_row">
+		  <li>
+		  	<img class="flex-item-image" src="images/IMAGE.png" alt="NAME">
+		  </li>
+		  <li class="flex-item-description">
+		  	<a href="https://twitter.com/TWITTERNAME"> NAME </a> </br>
+			Tools: TOOLS </br>
+			Specialties: SPECIALTIES </li>
+		</ul> 
+-->
