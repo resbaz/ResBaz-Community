@@ -1,9 +1,14 @@
 <html>
   <head>
-    <title>ResBaz Crew</title>
-<!-- 	 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.amber-light_blue.min.css" />  -->
+    <title>ResBaz Humanists</title>
+	<link rel="stylesheet" type="text/css" href="./html5tooltips.css" />
+	<link rel="stylesheet" type="text/css" href="./html5tooltips.animation.css" />
+	<script type="text/javascript" src="./html5tooltips.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900,200italic' rel='stylesheet' type='text/css'>    
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900,200italic' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
@@ -25,17 +30,17 @@
 
 		<ul class="flex-container_row">
 			<li>
-		  	<img class="flex-item-image" src="images/fiona.jpg"alt="Fiona Tweedie">
+		  	<img class="flex-item-image tt_target" id="fiona" src="images/fiona.jpg"alt="Fiona Tweedie">
 		  </li>
 		  <li class="flex-item-description">
 		  	<a href="https://twitter.com/fctweedie"> Fiona Tweedie </a> </br>
-			Tools: NLTK, CartoDB, Omeka  </br>
+			Tools: NLTK, CartoDB, Omeka, Github  </br>
 			Specialties: Mapping, text analysis, archiving </li>
 		</ul>
 
 		<ul class="flex-container_row">
 			<li>
-		  	<img class="flex-item-image" src="images/dejan.jpg"alt="Dejan Jotanovic">
+		  	<img class="flex-item-image tt_target" id="dejan" src="images/dejan.jpg"alt="Dejan Jotanovic">
 		  </li>
 		  <li class="flex-item-description">
 		  	<a href="https://twitter.com/heydejan"> Dejan Jotanovic </a> </br>
@@ -46,7 +51,7 @@
 
 		<ul class="flex-container_row">
 			<li>
-		  	<img class="flex-item-image" src="images/yuandra.jpg"alt="Yuandra Ismiraldi">
+		  	<img class="flex-item-image tt_target" id="yuandra" src="images/yuandra.jpg"alt="Yuandra Ismiraldi">
 		  </li>
 		  <li class="flex-item-description">
 		  	<a href="https://twitter.com/iniandra"> Yuandra Ismiraldi </a> </br>
@@ -56,7 +61,7 @@
 
 		<ul class="flex-container_row">
 			<li>
-		  	<img class="flex-item-image" src="images/tim.jpg" alt="Tim Rice">
+		  	<img class="flex-item-image tt_target" id="tim" src="images/tim.jpg" alt="Tim Rice">
 		  </li>
 		  <li class="flex-item-description">
 		  	<a href="https://twitter.com/0x7472"> Tim Rice </a> </br>
@@ -68,9 +73,12 @@
 		<li class="flex-item-categorie"> Helpers </li>
 		</ul>
 
+		<!-- HELPERS BELOW -->
+
+
 		<ul class="flex-container_row">
 			<li>
-		  	<img class="flex-item-image" src="images/lachlan.jpg"alt="Lachlan Musicman">
+		  	<img class="flex-item-image tt_target" id="lachlan" src="images/lachlan.jpg"alt="Lachlan Musicman">
 		  </li>
 		  <li class="flex-item-description">
 		  	<a href="https://twitter.com/datakid23"> Lachlan Musicman </a> </br>
@@ -79,29 +87,44 @@
 		</ul>
 
 
-
-		<ul class="flex-container_row">
-		<li class="flex-item-categorie"> Helpers </li>
-		</ul>
-
-		<!-- HELPERS BELOW -->
-
-
 	</ul>
+
+	<div style="display:none;"> 
+
+		<!-- 	ADD BADGES HERE -->		
+		<div id="paul_badges" style="display:inline-block;"> 
+		<img src="images/B_swcinstructor.png"> </br>
+		<img src="images/B_trainer.png"> 
+		<img src="images/B_multihelper.png"> 
+		<img src="images/B_helper.png"> 
+		<img src="images/B_problemsolver.png"> 
+		<img src="images/B_multihacky.png"> 
+		<img src="images/B_hacky.png"> 
+		</div> 
+
+		<div id="louise_badges"> 
+		</div> 
+
+		<div id="vince_badges">
+		<div>
+
+	</div>
+
+	<script type="text/javascript">
+
+		var brackets = $('.tt_target').map(function() {
+			var tt_selector = '#' + $(this).attr('id');
+			var cont_selector = tt_selector+'_badges';
+			
+			return { contentText: $(cont_selector).html(),
+		    targetSelector: tt_selector,
+		    stickTo: "right",
+		    maxWidth: 310};
+		});
+
+		html5tooltips(brackets);
+
+ 	</script>
 
   </body>
 </html>
-
-
-<!-- TEMPLATE -->
-<!-- 
-		<ul class="flex-container_row">
-		  <li>
-		  	<img class="flex-item-image" src="images/IMAGE.png" alt="NAME">
-		  </li>
-		  <li class="flex-item-description">
-		  	<a href="https://twitter.com/TWITTERNAME"> NAME </a> </br>
-			Tools: TOOLS </br>
-			Specialties: SPECIALTIES </li>
-		</ul> 
--->

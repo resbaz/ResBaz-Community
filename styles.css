@@ -158,3 +158,8 @@ html, body, .main {
   padding-bottom: .5em;
   color: black;
 }
+
+.html5tooltip-text img{
+  display: inline-block;
+  margin: .5em;
+}
