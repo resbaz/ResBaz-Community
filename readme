@@ -1,11 +1,1 @@
-Copy the following template into the right spot and replace all the fields that are written in capitals!
-
-<ul class="flex-container_row">
-  <li>
-  	<img class="flex-item-image" src="images/IMAGE.png" alt="NAME">
-  </li>
-  <li class="flex-item-description">
-  	<a href="https://twitter.com/TWITTERNAME"> NAME </a> </br>
-	Tools: TOOLS </br>
-	Specialties: SPECIALTIES </li>
-</ul> 
+NAVIGATE TO THE GITHUB-PAGES BRANCH AND READ THE README THERE
