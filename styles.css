@@ -25,7 +25,12 @@ html, body, .main {
   display: -webkit-flex;
   display: flex;
   
-  -webkit-flex-flow: row wrap;
+    -webkit-box-flow: row wrap;
+    -moz-box-flow: row wrap;
+    -ms-flexbox-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    
   justify-content: center;
 }
 
@@ -49,8 +54,12 @@ html, body, .main {
 
 @media all and (max-width: 600px) {
   .navigation {
+    -webkit-box-flow: column wrap;
+    -moz-box-flow: column wrap;
+    -ms-flexbox-flow: column wrap;
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
+    
     padding: 0;
   }
   
@@ -79,7 +88,12 @@ html, body, .main {
   display: -webkit-flex;
   display: flex;
   
-  -webkit-flex-flow: column wrap;
+    -webkit-box-flow: column wrap;
+    -moz-box-flow: column wrap;
+    -ms-flexbox-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    
   justify-content: space-around;
 }
 
@@ -114,7 +128,12 @@ html, body, .main {
   display: -webkit-flex;
   display: flex;
   
-  -webkit-flex-flow: row wrap;
+    -webkit-box-flow: row wrap;
+    -moz-box-flow: row wrap;
+    -ms-flexbox-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    
   justify-content: center;
 }
 
@@ -130,7 +149,12 @@ html, body, .main {
   display: -webkit-flex;
   display: flex;
   
-  -webkit-flex-flow: row wrap;
+    -webkit-box-flow: row wrap;
+    -moz-box-flow: row wrap;
+    -ms-flexbox-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+        
   justify-content: center;
 }
 
