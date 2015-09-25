@@ -1,7 +1,7 @@
 1) Add a square photo of your helper to 'images/'. Preferably not bigger than 400 by 400 pixels and a jpg (I know, pngs are great, but they take incredibly long to load.)
 (you might need to clone the Repo first to be able to do this.)
 
-2) Copy the following template into the right spot and replace all the fields that are written in capitals!
+2) Copy the following template into the right spot (on one of the .html pages, where you'll find similar snippets for everyone else) and replace all the fields that are written in capitals!
 
 <ul class="flex-container_row">
   <li>
@@ -13,7 +13,9 @@
 	Specialties: SPECIALTIES </li>
 </ul> 
 
-3) Add the following below "<!-- 	ADD BADGES HERE -->"
+--- for alumni, replace the line starting with '<img>' with:  <img style="-webkit-filter: grayscale(100%); filter: grayscale(100%);" class="flex-item-image tt_target" id="FIRSTNAME" src="images/IMAGE.jpg" alt="FIRSTNAME">
+
+3) Add the following below "<!-- ADD BADGES HERE -->" and change the capital bit to the id you entered.
 
 		<div id="FIRSTNAME_badges" style="display:inline-block;"> 
 		<img src="images/B_swcinstructor.png"> 
